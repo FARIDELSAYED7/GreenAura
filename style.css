@@ -69,9 +69,10 @@ header {
     height: 90vh;
 }
 
-section > h1 {
+section > h1,
+.About-text > h1 {
     text-align: center;
-    padding: 2em 0;
+    padding: 2em 0 0.75em;
     font-size: 2.25rem;
 }
 
@@ -86,16 +87,11 @@ section > h1 {
 }
 
 .About-us,
-.vision {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.Services {
     padding: 0 7.5vw;
-    height: 90vh;
 }
 
 .About-text {
-    width: 35vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -111,10 +107,6 @@ section > h1 {
     color: #0008;
     font-size: 1.5rem;
     margin: 2rem 0;
-}
-
-#Partners {
-    height: 90vh;
 }
 
 .partners {
@@ -188,6 +180,12 @@ section > h1 {
     transform: scale(1.1);
 }
 
+.activites-box h1 {
+    text-align: center;
+    padding: 0.75em 0;
+    font-size: 2.25rem;
+}
+
 .activites-box img {
     padding-bottom: 2vh;
     width: 10vw;
@@ -253,15 +251,12 @@ svg {
 }
 
 .footer {
-    background-color: #1b3b38;
+    background-color: #014328;
     color: white;
-    padding: 40px 7.5vw;
+    padding: 7.5vh 7.5vw;
 }
 
-.footer-container {
-    max-width: 1200px;
-    text-align: center;
-}
+.footer-container {}
 
 .footer-logo {
     font-size: 1.8em;
@@ -302,8 +297,7 @@ svg {
 .icons {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    width: 10vw;
+    gap: 1.5vw;
 }
 
 @media only screen and (max-width:821px) {
@@ -320,7 +314,7 @@ svg {
     }
 
     main img {
-        height: 70vh !important;
+        height: 50vh !important;
     }
 
     #About {
@@ -328,12 +322,12 @@ svg {
     }
 
     .About-us img,
-    .vision img {
+    .Services img {
         display: none;
     }
 
     .About-us,
-    .vision {
+    .Services {
         flex-direction: column;
         height: auto !important;
 
@@ -385,4 +379,38 @@ svg {
     .footer-bottom .icons {
         width: auto !important;
     }
+}
+
+.team {
+    display: flex;
+    justify-content: center;
+    gap: 5vw;
+}
+
+.team-member div {
+    border-radius: 50%;
+    height: 40vh;
+    width: 40vh;
+    margin: 1em 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.team-member {
+    text-align: center;
+    width: 20vw;
+}
+
+.team-member h1 {
+    font-size: 2.25rem;
+}
+
+.team-member h2 {
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+a > img {
+    height: 4vh;
 }
